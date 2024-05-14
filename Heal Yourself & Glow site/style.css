@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+width: 1OO%;
+min-height: 100vh;
+background-image: url(pic/img7.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+nav img{
+    width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+nav img:hover{
+    transform: rotate(360deg);
+}
+.nav-link{
+    flex:1;
+    text-align: right;
+}
+.nav-link ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.nav-link ul li::after{
+    content:"";
+    width:0%;
+    height: 2px;
+    margin: auto;
+    display: block;
+    background-color: rgb(130, 136, 224);
+    transition: 0.8s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.text{
+    position:absolute;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    color: white;
+}
+.text h1{
+    font-size: 65px;
+    font-weight: 600px;
+}
+.text p{
+    font-size: 20px;
+    margin: 30px 0;
+}
+.btn{
+    color: aliceblue;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+.btn:hover{
+    background-color: rgb(83, 23, 247);
+    border: rgb(83, 23, 247);
+    transition: 0.7s;
+}
+.Relations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0;
+    text-align: center;
+}
+.Relations h1{
+    font-size: 40px;
+    font-weight: 333px;
+    color: rgb(13, 20, 94);
+}
+.Relations P{
+    font-size: 15PX;
+    color: #ffffff;
+    margin-top: 15px;
+}
+.row {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top:75px;
+    margin-bottom: 50px;
+}
+.column{
+    flex-basis: 30%;
+    background-color: rgb(129, 183, 233);
+    border-radius: 20px;
+    padding: 30px 15px;
+    transition: 0.4s;
+}
+.column:hover{
+    box-shadow:0 0 20px 0;color: rgb(9, 11, 110);
+}
+.Books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Books h1{
+    font-size: 40px;
+    font-weight: 200;
+    color: rgb(231, 9, 83);
+}
+.Books p{
+    font-size: 16px;
+    color: rgb(109, 104, 104);
+    margin-top: 15px;
+}
+.column2 {
+    flex-basis: 31%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    bottom: 30px;
+}
+img{
+    width: 100%;
+}
+.heading{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+}
+.heading h3{
+    position: absolute;
+    bottom: 0;
+    left:35%;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    opacity: 0;
+    transition: 0.7s;
+}
+.heading:hover{
+    background:rgba(104, 80, 92, 0.4);
+}
+.heading:hover h3{ 
+bottom:49%;
+opacity: 1;
+}
+.Glow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 165px;
+    flex-direction: column;
+}
+.Glow h1 {
+    font-size: 60px;
+    font-weight: 200;
+}
+.Glow p {
+    font-size: 20px;
+    color: rgb(100, 97, 98);
+}
+.Glowdiv{
+    flex-basis: 32%;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Glowdiv img {
+width: 100%;
+min-height: 50vh;
+margin-bottom: 20px;
+border-radius:  20px;
+}
+
+.site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto 25px;
+    padding: 10px 30px;
+    text-align: center;
+}
+.site h4{
+    font-size: 20px;
+    font-weight: 300px;
+    padding: 50px 0 25px;
+}
+.site p{
+    color: rgb(97, 97, 97);
+    line-height: 30px;
+}
+.header-about{
+width: 100%;
+min-height: 50vh;
+background-image: url(pic/img5.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.header-about .text h1{
+    font-size: 40px;
+}
+.heal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 15px 20px;
+}
+.heal-heading{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 50%;
+}
+
+.heal-heading h1{
+    font-size: 35px;
+    position: relative;
+    bottom: 40px;
+}
+.heal-heading p{
+    color: rgb(122, 120, 116);
+    position: relative;
+    bottom: 30px;
+}
